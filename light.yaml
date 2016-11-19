@@ -32,4 +32,5 @@ devices:
     name: Back Outside
   - id: l3
     name: Dining Outside
-
+  - id: l
+    name: All outside
