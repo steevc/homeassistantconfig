@@ -1,0 +1,10 @@
+alias: Back Outside Timer
+trigger:
+  platform: state
+  entity_id: binary_sensor.pir_back
+  to: 'on'
+  for:
+    minutes: 3
+action:
+  service: homeassistant.turn_off
+  entity_id: light.study_wall

@@ -1,0 +1,10 @@
+alias: Hall Timer
+trigger:
+  platform: state
+  entity_id: binary_sensor.pir_hall
+  to: 'off'
+  for:
+    minutes: 2
+action:
+  service: homeassistant.turn_off
+  entity_id: light.porch

@@ -1,0 +1,10 @@
+alias: Front Outside Timer
+trigger:
+  platform: state
+  entity_id: binary_sensor.pir_front
+  to: 'on'
+  for:
+    minutes: 1
+action:
+  service: homeassistant.turn_off
+  entity_id: light.study_wall

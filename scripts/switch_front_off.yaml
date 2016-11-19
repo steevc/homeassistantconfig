@@ -1,0 +1,10 @@
+alias: "Turn off front light after 2 minutes"
+sequence:
+  - delay:
+      minutes: 2
+  - service: homeassistant.turn_off
+    entity_id: light.porch
+  - delay:
+      seconds: 1
+  - service: homeassistant.turn_off
+    entity_id: light.front_outside

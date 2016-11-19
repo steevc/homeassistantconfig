@@ -1,0 +1,13 @@
+alias: Front Door
+trigger:
+  platform: state
+  entity_id: binary_sensor.front_door
+  to: 'on'
+condition:
+  - condition: state
+    entity_id: binary_sensor.sun_up
+    state: 'off'
+action:
+  - service: script.turn_on
+    entity_id: script.switch_front_light
+

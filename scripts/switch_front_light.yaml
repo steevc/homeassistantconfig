@@ -1,0 +1,16 @@
+alias: "Turn on front light with timer"
+sequence:
+  # Cancel ev. old timers
+  - service: script.turn_off
+    entity_id: script.timer_off
+  - service: homeassistant.turn_on
+    entity_id: light.porch
+  - delay:
+      seconds: 1
+  - service: homeassistant.turn_on
+    entity_id: light.front_outside
+  # Set new timer
+  - service: script.turn_on
+    entity_id: script.switch_front_off
+
+

@@ -1,0 +1,35 @@
+platform: x10
+devices:
+  - id: a1
+    name: Hall
+  - id: b1
+    name: Master Bedroom
+  - id: b2
+    name: Tilly Bedroom
+  - id: b3
+    name: Dylan Bedroom
+  - id: c1
+    name: Shower Room
+  - id: c2
+    name: Bathroom
+  - id: d1
+    name: Landing
+  - id: d2
+    name: Porch
+  - id: d3
+    name: Utility
+  - id: e3
+    name: Dining
+  - id: e4
+    name: Kitchen
+  - id: e5
+    name: Study
+  - id: e6
+    name: Study Wall
+  - id: l1
+    name: Front Outside
+  - id: l2
+    name: Back Outside
+  - id: l3
+    name: Dining Outside
+

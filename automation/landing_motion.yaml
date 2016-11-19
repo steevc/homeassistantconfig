@@ -1,0 +1,12 @@
+alias: Landing Motion
+trigger:
+  platform: state
+  entity_id: binary_sensor.pir_landing
+  to: 'on'
+condition:
+  - condition: state
+    entity_id: binary_sensor.sun_up
+    state: 'off'
+action:
+  service: homeassistant.turn_on
+  entity_id: light.landing

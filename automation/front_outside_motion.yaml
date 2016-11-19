@@ -1,0 +1,12 @@
+alias: Front Outside Motion
+trigger:
+  platform: state
+  entity_id: binary_sensor.pir_front
+  to: 'off'
+condition:
+  - condition: state
+    entity_id: binary_sensor.sun_up
+    state: 'off'
+action:
+  service: homeassistant.turn_on
+  entity_id: light.front_outside

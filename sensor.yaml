@@ -1,0 +1,12 @@
+- platform: rpi_gpio
+  ports:
+    2: Front Door
+    4: PIR Front
+    17: PIR Landing
+    18: PIR Hall
+    22: PIR Back
+- platform: template
+  sensors: 
+    sun_up:
+      value_template: '{{ states.sun.sun.attributes.elevation > 2}}'
+      friendly_name: 'Sun is up'
