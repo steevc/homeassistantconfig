@@ -1,0 +1,12 @@
+# Turn off all outside when it's late or morning
+alias: Front Outside Motion
+trigger:
+  - platform: time
+    after: '23:30:00'
+  - platform: state
+    entity_id: binary_sensor.sun_up
+    to: 'on'
+
+action:
+  service: homeassistant.turn_off
+  entity_id: light.all_outside
