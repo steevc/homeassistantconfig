@@ -1,5 +1,5 @@
 # Turn off all outside when it's late or morning
-alias: Front Outside Motion
+alias: Turn off outside
 trigger:
   - platform: time
     after: '23:30:00'
