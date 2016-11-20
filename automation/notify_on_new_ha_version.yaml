@@ -1,0 +1,9 @@
+alias: New HA Version
+trigger:
+  platform: state
+  entity_id: updater.updater
+action:
+  service: notify.steve_phone
+  data:
+    title: 'New HA Release'
+    message: 'HA {{ states.updater.updater.state }} released'
