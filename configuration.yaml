@@ -39,16 +39,22 @@ logbook:
 # Track the sun
 sun:
 
+# Heating
 nest:
   username: !secret nest_user
   password: !secret nest_pass
+
+climate:
+  platform: nest
 
 # Weather Prediction
 sensor:
   platform: yr
 
-climate:
-  platform: nest
+notify:
+  name: Steve Phone
+  platform: simplepush
+  device_key: !secret simplepush
 
 binary_sensor: !include sensor.yaml
 
