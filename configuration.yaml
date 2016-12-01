@@ -39,6 +39,8 @@ logbook:
 # Track the sun
 sun:
 
+emulated_hue:
+
 # Heating
 nest:
   username: !secret nest_user
