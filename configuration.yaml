@@ -60,6 +60,11 @@ climate:
 sensor:
   platform: yr
 
+notify:
+  name: Steve Phone
+  platform: simplepush
+  device_key: !secret simplepush
+
 binary_sensor: !include sensor.yaml
 
 light: !include light.yaml
