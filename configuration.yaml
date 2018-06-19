@@ -49,7 +49,7 @@ sun:
 emulated_hue:
 
 # Heating
-nest:
+#nest:
   username: !secret nest_user
   password: !secret nest_pass
 
